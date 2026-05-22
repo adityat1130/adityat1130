@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{background-image:url(images/headphones.jpeg);}
+   
+/* main container */
+.card-container{display: flex;
+box-sizing: border-box;
+margin-top: 30px;
+margin: 50px auto;
+padding: 20px;}
+
+/* div */
+div{ border:3px solid black;
+margin-left: 40px;
+width: 400px;
+height: 650px;}
+
+/* image */
+div img{ width: 400px;
+height: 250px;
+box-shadow: 6px 10px 11px rgb(0, 0, 0);
+transition: 2s;}
+
+/* image hover */
+img:hover{transform: scale(1.2);
+z-index: 2;}
+
+/* heading */
+h1{ font-size: 28px;}
+
+/* paragraph */
+p{ font-size: 20px;
+font-family: sans-serif;
+font-weight: 400;}
+
+/* button */
+button{margin: 20px;
+padding: 10px;
+font-size: 15px;
+background-color: black;
+color: white;
+transition: 2s;
+cursor: pointer;
+border-radius: 8px;
+animation-name: aa;
+animation-timing-function: linear;
+animation-duration: 2s;}
+
+@keyframes aa {
+    from{
+        width: 0%;
+
+    }
+
+    to{
+        width: 100px;
+    }
+}
+
+button:hover{background-color: indianred;}
+
+
+</style>
+<body>
+    <!-- container -->
+<main class="card-container">
+<!-- div1 -->
+<div>
+<img src="images/ballon2.webp" alt="">
+<h1>Card 1</h1><br>
+<p>A hot air balloon is a type of aircraft consisting of a large fabric envelope, a heat source (burner) to heat the air inside, and a basket for passengers and fuel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae et ratione ut vero.</p>
+<button>Read More</button></div>
+<!-- div2 -->
+<div>
+<img src="images/nature.jpg" alt="">
+<h1>Card 2</h1><br>
+<p> nature is the entire physical world and all the living and non-living things within it that are not made by humans. This includes everything from plants, animals, and landscapes to things like weather, rocks, air, and the universe itself.</p>
+<button>Read More</button></div>
+<!-- div3 -->
+<div>
+<img src="images/ocean.jpg" alt="">
+<h1>Card 3</h1><br>
+<p>The ocean is a vast, salty water of covering 71% of Earth's surface, vital for life by producing 50% of our oxygen and supporting most of the earth's diversity, from microscopic plankton to the blue whale.Ocean often considered dangerous.</p>
+<button>Read More</button></div>
+</main>
+</body>
+</html>
